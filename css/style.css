@@ -1,6 +1,5 @@
 html, body {
 	height: 100%;
-	
 }
 body {
 	width: 100%;
@@ -16,35 +15,6 @@ h1 {
     float: left;
     font-size: 3em;
     padding: 20px;
-}
-#sidebar {
-	position: fixed;
-	height: 100%;
-	width: 100px;
-	background: blue;
-	top: 0;
-	left: 0;
-	z-index:1;
-	transition: width 1s;
-}
-li:hover #sidebar {
-	width: 150px;
-}
-#sidebar ul {
-	border-left: 3px solid green;
-}
-#sidebar li {
-	min-width: 60px;
-	font-size: 3em;
-	padding: 20px;
-	background: white;
-	transition: width 1s;
-	overflow: hidden;
-}
-#sidebar li:hover {
-	background: gray;
-	width: 100px;
-	cursor:pointer;
 }
 .timer {
 	position: absolute;
