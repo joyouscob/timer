@@ -17,14 +17,12 @@
   }
 
   resetButton.onclick = function() {
-    if (timer) {
       totalSeconds = 0;
       clearInterval(timer);
       timer = null;
 	  secondsLabel.innerHTML = "00";
 	  minutesLabel.innerHTML = "00";
 	  hoursLabel.innerHTML = "00";
-    }
   };
 
   function setTime() {
