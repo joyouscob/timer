@@ -4,9 +4,11 @@ html, body {
 }
 body {
 	width: 100%;
-	background: #f07703;
-	
-
+	background: #3498db;
+}
+* {
+	font-family: 'open sans', sans-serif;
+	font-weight: 300;
 }
 h1 {
 	color: white;
@@ -48,8 +50,35 @@ li:hover #sidebar {
 	left:50%;
 	top: 50%;
 	color: white;
-	font-size: 5em;
+	font-size: 8em;
 	font-weight: bold;
-	margin-top: -60px;
-	margin-left: -;
+	margin-top: -180px;
+	margin-left: -290px;
+}
+#buttons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 200px;
+    margin-left: -171px;
+}
+#buttons img{
+    width: 75px;
+	display: inline-block;
+	cursor:pointer;
+}
+#buttons img:nth-child(3) {
+    width: 77px;
+
+}
+
+#stop {
+	height: 69px;
+	width: 69px;
+	/*background: white;*/
+	display: inline-block;
+	margin: 0 60px 0 60px;
+	cursor: pointer;
+	border: 4px solid white;
+	border-radius: 8px;
 }
