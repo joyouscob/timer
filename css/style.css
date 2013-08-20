@@ -45,6 +45,7 @@ h1 {
 	background: #27ae60;
 	border-left: 5px solid white;
 	width: 70px;
+	height: 75px;
 }
 #buttons img:nth-child(3) {
     width: 77px;
@@ -55,6 +56,7 @@ h1 {
 	background: #f39c12;
 	border-left: 5px solid white;
 	width: 72px;
+	height: 76px;
 }
 
 #stop {
@@ -70,6 +72,49 @@ h1 {
 #stop:hover {
 	background: #D84738;
 	border-left: 5px solid white;
-	height: 70px;
-	width: 64px;
+	width: 70px;
+}
+
+@media only screen and (max-width: 575px) {
+	h1 {
+		font-size: 1.5em;
+	}
+	.timer {
+		margin-left: -180px;
+		font-size: 5em;
+	}
+	#buttons {
+		margin-left: -172px;
+	}
+	#buttons img {
+		width: 60px;
+	}
+	#buttons img:hover {
+		border-left: 2px solid white;
+		width: 58px;
+		height: auto;
+	}
+	#buttons img:first-child {
+	    padding: 20px;
+	}
+	#buttons img:first-child:hover {
+		border-left: 2px solid white;
+		width: 58px;
+		height: auto;
+	}
+	#buttons img:nth-child(2) {
+		height: auto;
+		padding: 20px;
+		margin: 0 18px;
+	}
+	#buttons img:nth-child(3) {
+	    width: 60px;
+	    padding: 20px;
+	}
+	#buttons img:nth-child(3):hover {
+		border-left: 2px solid white;
+		width: 58px;
+		height: auto;
+	}
+
 }
