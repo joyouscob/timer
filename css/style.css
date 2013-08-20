@@ -1,30 +1,30 @@
-html, body {
+html, body {    
 	height: 100%;
 }
 body {
-	width: 100%;
-	background: #3498db;
+     width: 100%;
+     background: #3498db;
 }
 * {
-	font-family: 'open sans', sans-serif;
-	font-weight: 300;
+     font-family: 'open sans', sans-serif;
+     font-weight: 300;
 }
 h1 {
-	color: white;
+     color: white;
     font-weight: 300;
     float: left;
     font-size: 3em;
     padding: 20px;
 }
 .timer {
-	position: absolute;
-	left:50%;
-	top: 50%;
-	color: white;
-	font-size: 8em;
-	font-weight: bold;
-	margin-top: -180px;
-	margin-left: -290px;
+     position: absolute;
+     left:50%;
+     top: 50%;
+     color: white;
+     font-size: 8em;
+     font-weight: bold;
+     margin-top: -180px;
+     margin-left: -290px;
 }
 #buttons {
     position: absolute;
@@ -34,17 +34,18 @@ h1 {
 }
 #buttons img{
     width: 75px;
-	display: inline-block;
-	cursor:pointer;
+     display: inline-block;
+     cursor:pointer;
 }
 #buttons img:first-child {
     padding: 30px;
     background: #2ecc71;
 }
 #buttons img:first-child:hover {
-	background: #27ae60;
-	border-left: 5px solid white;
-	width: 70px;
+     background: #27ae60;
+     border-left: 5px solid white;
+     width: 70px;
+     height: 75px;
 }
 #buttons img:nth-child(3) {
     width: 77px;
@@ -52,24 +53,68 @@ h1 {
     padding: 30px;
 }
 #buttons img:nth-child(3):hover {
-	background: #f39c12;
-	border-left: 5px solid white;
-	width: 72px;
+     background: #f39c12;
+     border-left: 5px solid white;
+     width: 72px;
+     height: 76px;
 }
 
 #stop {
-	height: 75px;
-	width: 69px;
-	/*background: white;*/
-	display: inline-block;
-	margin: 0 72px 0 72px;
-	cursor: pointer;
+     height: 75px;
+     width: 69px;
+     /*background: white;*/
+     display: inline-block;
+     margin: 0 72px 0 72px;
+     cursor: pointer;
     background: #e74c3c;
-	padding: 30px;
+     padding: 30px;
 }
 #stop:hover {
-	background: #D84738;
-	border-left: 5px solid white;
-	height: 70px;
-	width: 64px;
+     background: #D84738;
+     border-left: 5px solid white;
+     width: 70px;
+}
+
+@media only screen and (max-width: 575px) {
+     h1 {
+          font-size: 1.5em;
+     }
+     .timer {
+          margin-left: -180px;
+          font-size: 5em;
+     }
+     #buttons {
+          margin-left: -172px;
+     }
+     #buttons img {
+          width: 60px;
+     }
+     #buttons img:hover {
+          border-left: 2px solid white;
+          width: 58px;
+          height: auto;
+     }
+     #buttons img:first-child {
+         padding: 20px;
+     }
+     #buttons img:first-child:hover {
+          border-left: 2px solid white;
+          width: 58px;
+          height: auto;
+     }
+     #buttons img:nth-child(2) {
+          height: auto;
+          padding: 20px;
+          margin: 0 18px;
+     }
+     #buttons img:nth-child(3) {
+         width: 60px;
+         padding: 20px;
+     }
+     #buttons img:nth-child(3):hover {
+          border-left: 2px solid white;
+          width: 58px;
+          height: auto;
+     }
+
 }
